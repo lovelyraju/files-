@@ -1,0 +1,96 @@
+ install git in linux 
+
+Git packages are available via  yum ( Yellowdog Updater, Modified (YUM))  
+
+1. install git command 
+
+	$ sudo yum install git
+
+2. check version command 
+
+	$ git --version
+
+
+_________________________________________________________________________
+
+--> Create Github Account 
+
+1. go to : https://github.com/ 
+2  Login to github 
+3.create a new repository (ex: demo repository name )
+
+--> GIT COMMANDS 
+
+step 1: create a new folder and open Git bash/cmd and go to folder 
+
+step 2: run commands 
+
+	git config --global user.email "your_email_address"
+	git config --global user.name "your_name"
+
+step 3: git init 
+
+step 4: Add some files in the folder 
+
+step 5: Run commands 
+	
+	git status ( red color  means untracking file )
+	git add 
+	git commit -m" ur messages " 
+
+step 6 : add the remote repo ur 
+
+	$ git remote add origin url 
+ ex:  git remote add origin https://github.com/lovelyraju/demotemplate.git
+ 	$git remote show origin 
+
+step 7: push the changes to repository 
+	$git push -u origin master 
+
+permission to browning 
+
+Step 8: check output of following commands 
+
+	$git log 
+	$git --help 
+
+--> GIT BRANCHING & MERGING 
+
+1.what are branches 
+
+2. how to create branch 
+
+3.how to checkout branch 
+
+4.how to merge branch to master 
+
+5. how to delete branch ( local and Remote ) 
+
+step 1 : create branch 
+
+	$git branch "branch name" ( demotemp)
+ 
+step 2: checkout branch git checkout "branchname"
+
+	$ git checkout demotem 
+	Switched to branch 'demotem'
+
+step 3: Run commands 
+	
+	git status ( red color  means untracking file )
+	git add 
+	git commit -m" ur messages " 
+
+step 4:$ git push -u origin demtem
+
+step 5 : on local checkout master branch 
+	$git checkout master
+
+step 6 : Merge new branch in master branch 
+	$git merge "branch name" 
+
+step 7: push the changes 
+
+	$git push -u origin master 
+
+
